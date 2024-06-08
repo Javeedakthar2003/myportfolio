@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav__content">
+            <div class="logo"><a href="#">MyPortfolio</a></div>
+            <label for="check" class="checkbox">
+                <i class="ri-menu-line"></i>
+            </label>
+            <input type="checkbox" name="check" id="check" />
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="./inde.html">ABOUT US</a></li>
+                <li><a href="./resume.html">RESUME</a></li>
+                <!-- Add a toggle button for dark mode -->
+                <li><button id="dark-mode-toggle" href="./image/dark_mode_icon.png">DARK MODE</button></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="section">
+        <div class="section__container">
+            <div class="content">
+                <p class="subtitle">HELLO</p>
+                <h1 class="title">
+                    I'm <span>Javeed akthar<br /></span>
+                </h1>
+                <p class="description">
+                    Welcome to my portfolio Web Page!
+                </p>
+                <div class="action__btns">
+                    <div class="hire__me">
+                        <a href="https://www.linkedin.com/"><img src="image/linkedin.png" alt="click me"></a>
+                    </div>
+                    <div class="portfolio">
+                        <a href="https://github.com/github"><img src="image/github.png" alt="click me"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="image">
+                <img src="image/image1.jpg" alt="profile" />
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section__container">
+            <div class="content">
+                <h1 class="title">
+                    About <span>Us<br /></span>
+                </h1>
+                <p class="description">
+                    A dynamic and results-driven professional passionate about creating robust web
+                    solutions. With a solid foundation in Java and expertise in front-end technologies
+                    including HTML, CSS, JavaScript and Bootstrap. I bring a versatile skill set honed
+                    through hands-on project experience.<br><br>
+                    Its my dedication to continuous learning and growth, seeking opportunities that foster
+                    professional development while allowing me to contribute my expertise towards
+                    impactful projects.
+                </p>
+            </div>
+            <div class="image">
+                <img src="image/back.png" alt="profile" />
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <h1 class="title1">
+            Skills and <span>technologies<br /></span>
+        </h1>
+        <div class="section__container">
+            <div class="flip-card">
+
+                <div class="flip-card-inner">
+
+                    <div class="flip-card-front">
+
+                        <img src="./image/website-development-3839571-3202873.webp" alt="Avatar"
+                            style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+
+                        <h3>Web development - Front end development</h3> <br>
+                        <p>1.Crafting seamless user experiences across all devices with adaptive and fluid layouts.</p>
+                        <br>
+                        <p>2.Building interactive and dynamic web pages using cutting-edge ES6+ features and frameworks.
+                        </p><br>
+                        <p>3.Implementing stunning animations, transitions, and sophisticated layouts using Flexbox and
+                            Grid.</p><br>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./image/uiux-design.png" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>UI - Designing</h3><br>
+
+                        <p>1.Crafting seamless user experiences across all devices with adaptive, fluid layouts and
+                            visually appealing interfaces.</p><br>
+                        <p>2.Designing a dynamic and engaging web pages to enhancing interactivity and user experience.
+                        </p><br>
+                        <p>3.Expertise in using Canva and Figma for creating stunning posters, web designs, and
+                            prototypes that blend aesthetics with functionality.</p><br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./image/Web-Application-Icon-Transparent-PNG.png" alt="Avatar"
+                            style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Back end technologies</h3><br>
+                        <p>1.Skilled in designing and managing high-performance SQL databases.</p><br>
+                        <p>2.Experienced in creating custom solutions and integrations in Salesforce.</p><br>
+                        <p>3.Proficient in data migration and backend process automation using SQL.</p><br>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./image/team.png" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Problem-Solving Pro with Exceptional Group Communication Skills</h3><br>
+                        <p>1.Adept at identifying and resolving complex technical issues efficiently, ensuring project
+                            success and system reliability.</p><br>
+                        <p>2.Strong communicator, able to convey technical concepts clearly to both technical and
+                            non-technical team members.</p><br>
+                        <p>3.Skill in collaborating with diverse teams on group projects
+                            and productive work environment.</p><br>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <script>
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+
+        darkModeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+
+</html>

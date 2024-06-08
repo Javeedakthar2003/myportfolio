@@ -1,0 +1,360 @@
+:root {
+    --primary-color: #a855f7;
+    --primary-color-dark: #9333ea;
+    --secondary-color: #ca8a04;
+    --text-dark: #1f2937;
+    --text-light: #6b7280;
+    --extra-light: #faf5ff;
+    --max-width: 1200px;
+    --background-color: #ffffff;
+    /* Light theme background color */
+    --background-color-dark: #333333;
+    /* Dark theme background color */
+    --text-color: #333333;
+    /* Light theme text color */
+    --text-color-dark: #ffffff;
+    /* Dark theme text color */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--background-color);
+    transition: background-color 0.3s;
+    /* Add transition for smooth background color change */
+}
+
+.dark-mode {
+    --background-color: var(--background-color-dark);
+
+}
+
+.dark-mode nav {
+    background-color: var(--background-color-dark);
+
+}
+
+.dark-mode .nav__content {
+    color: var(--text-color-dark);
+
+}
+
+.dark-mode .section {
+    background-color: var(--background-color-dark);
+
+}
+
+.dark-mode .content {
+    color: var(--text-color-dark);
+
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    z-index: 99;
+
+}
+
+.nav__content {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav .logo a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(12, 12, 16);
+    transition: 0.3s;
+}
+
+nav .logo a:hover {
+    color: rgb(131, 164, 175);
+}
+
+nav .checkbox {
+    display: none;
+}
+
+nav input {
+    display: none;
+}
+
+nav .checkbox i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    transition: left 0.3s;
+}
+
+ul li a {
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--text-dark);
+    transition: 0.3s;
+}
+
+ul li a:hover {
+    border-top-color: rgb(131, 164, 175);
+    border-bottom-color: rgb(131, 164, 175);
+    color: rgb(131, 164, 175);
+    background-image: url(./image/dark_mode_icon.png);
+}
+
+.section {
+    background-color: var(--extra-light);
+}
+
+.section__container {
+    min-height: 100vh;
+
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.subtitle {
+    letter-spacing: 2px;
+    color: var(--text-light);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 3rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.title1 {
+    margin-left: 10%;
+    padding: 5px;
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 3rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+
+}
+
+.title1 span {
+    font-weight: 600;
+}
+
+
+
+
+.title span {
+    font-weight: 600;
+}
+
+.description {
+    line-height: 1.5rem;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+
+}
+
+.action__btns {
+    display: flex;
+    gap: 1rem;
+}
+
+.action__btns button {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 1rem 2rem;
+    outline: none;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.hire__me img {
+    color: #d57676;
+    width: 50px;
+    height: 50px;
+}
+
+.hire__me:hover {
+    background-color: rgb(20, 20, 215);
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.portfolio img {
+    color: #ffffff;
+    width: 50px;
+    height: 50px;
+}
+
+.portfolio:hover {
+    background-color: rgb(123, 161, 144);
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.image {
+    display: grid;
+    place-items: center;
+}
+
+.image img {
+    width: 75%;
+    height: 50%;
+    border-radius: 200%;
+}
+
+.image img:hover {
+    cursor: pointer;
+    orphans: 20px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 390px;
+    height: 250px;
+    perspective: 1000px;
+    display: inline-block;
+    cursor: pointer;
+    padding-left: 20px;
+    place-items: center;
+
+
+
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    background-size: cover;
+    border-radius: 200px;
+    backface-visibility: visible;
+
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 20px;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: rgb(131, 164, 175);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+/* Media queries for responsiveness */
+
+@media screen and (max-width: 768px) {
+
+    /* Navigation menu */
+    .nav__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav__content ul {
+        position: relative;
+        width: 100%;
+    }
+
+    .nav__content ul li {
+        display: block;
+    }
+
+    .nav__content ul li a {
+        padding: 0.5rem 1rem;
+    }
+
+    .checkbox {
+        display: block;
+    }
+
+    /* Section container */
+    .section__container {
+        grid-template-columns: 1fr;
+    }
+
+    .image {
+        order: 1;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    /* styles for mobile screens */
+    .image img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    /* styles for small mobile screens */
+    .image img {
+        width: 80%;
+        height: 80%;
+    }
+}
